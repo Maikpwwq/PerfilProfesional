@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="./css/style.css">
+    <title>Curriculum Vitae</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:300,400|Roboto:300,400,500">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link rel="canonical" href="#">
+    <meta name="author" content="Michael Arias">
+    <link rel="manifest" href="assets/manifest.json">
+
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@gndx">
+    <meta name="twitter:creator" content="@gndx">
+    <meta name="twitter:title" content="">
+    <meta name="twitter:description" content="">
+    <meta name="twitter:image" content="">
+
+    <meta property="og:locale" content="en_US">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="">
+    <meta property="og:description" content="">
+    <meta property="og:url" content="#">
+    <meta property="og:site_name" content="#">
+    <meta property="og:image" content="">
+</head>
+<body>
+    <div class="MainStyle">
+        <div class="MainContainer">
+          {children}
+        </div>
+    </div>
+    <div className="info">
+        <div className="Info-container">
+          {children}
+        </div>
+      </div>
+    <div className="Sidebar">
+        <div className="Sidebar-container">
+          {children}
+        </div>
+    </div>
+    <Wrapper>
+       <Load />
+    </Wrapper>
+    <div class="Skills">
+        <h2 name="Skills"></h2>
+        <div class="SkillsContainer">
+          {props.data.map((skill, index) => (
+            <div class='Skills-item' key={`Skills-${index}`}>
+              <SkillsH5>{skill.name}</SkillsH5>
+              <div class="SkillsLine">
+                <span class="SkillsSpan" width={skill.percentage}></span>
+              </div>
+            </div>
+          ))}
+        </div>
+    </div>
+    <div class="SocialStyle">
+        {props.social &&
+          <ul class="SocialUl">
+            {props.social.map((item, index) =>
+              <li class="SocialLi" key={`social-${index}`}>
+                <a class="SocialAnchor" href={item.url} target='_blank'>
+                  <ThemeProvider theme={getColor(item.name)}>
+                    <i class="SocialIcon" style="fa fa-${item.name}"></i>
+                  </ThemeProvider>
+                </a>
+              </li>
+            )}
+          </ul>
+        }
+    </div>
+    <div class="Certificates">
+        <h2 name="Certificates"></h2>
+        {props.data.map((cert, index) => (
+          <div class='Certificates-item' key={`Certificates-${index}`}>
+            <h3>{cert.name} @ {cert.institution} <span>{cert.date}</span></h3>
+            <p content={cert.description}></p>
+          </div>
+        ))}
+    </div>
+    <div class="AboutStyle">
+        <div class="About-container">
+          <div class="AboutAvatar">
+            <img class="AboutAvatarImg" src={avatar} alt={name} />
+          </div>
+          <div class="AboutName">
+            <h2 class="Abouth2">{name}</h2>
+          </div>
+          <p class="AboutProfession">{profession}</p>
+          <p class="AboutBio">
+            {bio}
+          </p>
+          <p class="AboutLocation">
+            {address}
+          </p>
+          <div className="About-social">
+            <Social social={social} />
+          </div>
+        </div>
+    </div>
+    <div class="Education">
+        <h2 name="Education" />
+        {props.data.map((edu, index) => (
+          <div className='Education-item' key={`Education-${index}`}>
+            <h3>{edu.degree} @ {edu.institution} <span>{edu.startDate} - {edu.endDate}</span></h3>
+            <p content={edu.description}></p>
+          </div>
+        ))}
+    </div>
+</body>
+</html>
