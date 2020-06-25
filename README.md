@@ -1,6 +1,8 @@
 # PerfilProfesional
 A mis relaciones publicas presento un Curriculum Vitae 
 
+![Commits](./img/CommitsIniciales.png) Cambios.
+
 - Este proyecto comprende mi portafolio y recopila mis experiencias previas.
 
 __Intereses:__
