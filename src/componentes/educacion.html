@@ -6,6 +6,14 @@
     <title>Educacion</title>
 </head>
 <body>
-    
+    <div class="Education">
+        <h2 name="Education" />
+        {props.data.map((edu, index) => (
+          <div className='Education-item' key={`Education-${index}`}>
+            <h3>{edu.degree} @ {edu.institution} <span>{edu.startDate} - {edu.endDate}</span></h3>
+            <p content={edu.description}></p>
+          </div>
+        ))}
+    </div>
 </body>
 </html>

@@ -6,6 +6,20 @@
     <title>Social</title>
 </head>
 <body>
-    
+    <div class="SocialStyle">
+        {props.social &&
+          <ul class="SocialUl">
+            {props.social.map((item, index) =>
+              <li class="SocialLi" key={`social-${index}`}>
+                <a class="SocialAnchor" href={item.url} target='_blank'>
+                  <ThemeProvider theme={getColor(item.name)}>
+                    <i class="SocialIcon" style="fa fa-${item.name}"></i>
+                  </ThemeProvider>
+                </a>
+              </li>
+            )}
+          </ul>
+        }
+    </div>
 </body>
 </html>
