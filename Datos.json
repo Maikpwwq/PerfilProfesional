@@ -1,0 +1,37 @@
+{
+    "address":"Bogota, Colombia.",
+    "avatar":"./img/Foto CV 3x4.jpg",
+    "bio":"Project manager, knowledge in 3D CAD engineering design, control engineering, process engineering, heat treatment, corrosion.
+    Experience in: Continuous improvement, Product design, Content marketing strategy, Web developer.
+    As a leader, I care about the development of each member, and I have a good aptitude for self-training.",
+    "certificate":[
+        {"date":"Agosto 2020","description":"FrontEnd Developer",
+        "institution":"Bictia","name":"Desarrollo Web (UX-UI)"}        
+    ],
+    "education":[
+        {"degree":"Especialista en gestion de proyectos","description":"hola",
+        "endDate":"Present","institution":"Universidad distrital Francisco José de Caldas","startDate":"Agosto 2017"},
+        {"degree":"Mechanical Engineering", "description":"Mechanical Engineer, recognized for the best grade in the Saber Pro test of the 2017-1 promotion.",
+        "endDate":"March 2017","institution":"Universidad distrital Francisco José de Caldas","startDate":"Jan 2010"}
+    ],
+    "experience":[
+        {"company":"Listtech","endDate":"Present",
+            "jobDescription":"Specification of physical security and intelligent protection systems, readers, access panels, video surveillance, 
+            home automation, electronic locks and doors. We carry out preventive and corrective maintenance to emergency exits phase 1-2 El Dorado airport.",
+            "jobTitle":"Smart security integrator","startDate":"Juli 2019"},
+        {"company":"Comunidad dezzpo","endDate":"Jan 2020",
+            "jobDescription":"Programming schedules of activities and resources, development of databases, 
+            digital marketing campaigns, prototype website and generation and conversion of new market niches.",
+            "jobTitle":"CEO / Web developer","startDate":"Agosto 2018"}
+        ],
+    "name":"Michael Arias",
+        "profession":"Web Developer",
+        "skills":[{"name":"HTML5","percentage":"75%"},
+        {"name":"CSS","percentage":"25%"},
+        {"name":"JavaScript","percentage":"55%"},
+        {"name":"React","percentage":"90%"}],
+    "social":[
+        {"name":"facebook", "url":"https://facebook.com/"},
+        {"name":"twitter", "url":"https://twitter.com/"},
+        {"name":"github", "url":"https://github.com/"},
+        {"name":"linkedin", "url":"https://www.linkedin.com/"}]}
