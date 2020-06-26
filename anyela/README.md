@@ -16,7 +16,7 @@ Taller No. 10
 
 Anyela López
 
-![Imagén](.\Captura1.jpg)
+![Imagén](Captura1.jpg)
 
 ![Imagén](C:\Users\wareinaal\Desktop\taller 10\PerfilProfesional\anyela\Captura 2.jpg)
 
