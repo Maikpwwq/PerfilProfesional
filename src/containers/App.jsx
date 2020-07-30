@@ -23,10 +23,11 @@ const GlobalStyle = createGlobalStyle`
   }
 `;
 
-const api = require ('../Datos.json');
+const api = new Request('./Datos.json') // Constructor Request
+const API = require('./Datos.json'); // Load Json data
 
 const App = () => {
-    const data = useJSONAPI(api);
+    const data = useJSONAPI(API);
     console.log(data);
     return data.length === 0 ? <><GlobalStyle/><Loader/></> : (
         <Main>

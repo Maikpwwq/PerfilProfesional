@@ -1,6 +1,5 @@
 const path = require("path");
 const HtmlWebPackPlugin = require("html-webpack-plugin");
-const MiniCssExtractPlugin = require("mini-css-extract-plugin"); 
 const FaviconsWebpackPlugin = require("favicons-webpack-plugin")
 
 module.exports = {
@@ -34,24 +33,14 @@ module.exports = {
                 test: /\.(js|jsx)$/,
                 exclude: /node_modules/,
                 use: [{
-                    loader: 'babel-loader',
+                    loader: "babel-loader",
                 }],
 
                 test: /\.html$/,
                 exclude: /node_modules/,
                 use: [{
                     loader: "html-loader",
-                }],
-
-                test: /\.(css|scss)$/,
-                exclude: /node_modules/,
-                use: [{
-                    loader: MiniCssExtractPlugin.loader,
-                    options: {
-                        importLoaders: 1,
-                        esModule: true,
-                    },
-                },'css-loader'],                
+                }],              
 
                 test: /\.(jpg|jpeg|png|gif|mp3|svg)$/,
                 use: [{
@@ -64,11 +53,21 @@ module.exports = {
                 test: /\.m?js$/,
                 exclude: /(node_modules|bower_components)/,
                 use: {
-                    loader: 'babel-loader',
+                    loader: "babel-loader",
                     options: {
                         presets: ['@babel/preset-env']
                     } 
-                }
+                },
+
+                test: /\.ts$/, 
+                use: [{
+                    loader: "ts-loader",
+                }],
+
+                test: /\.json$/,
+                use: [{
+                    loader: "json-loader",
+                }]
             }
         ]
     },
@@ -81,10 +80,6 @@ module.exports = {
         new HtmlWebPackPlugin({
             template: "./public/index.html/",
             filename: "./index.html"
-        }),
-        new MiniCssExtractPlugin({
-            filename: "[name].css",
-            chunkFilename: "[id].css"
         }),
         new FaviconsWebpackPlugin({
             logo: './public/icon.png',
