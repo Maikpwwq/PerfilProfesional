@@ -1,14 +1,14 @@
 import React from "react";
 import styled from 'styled-components';
 
-const Mainsection = styled.div`
+const MainSection = styled.div`
   display: grid;
   grid-template-columns: minmax(auto, 1024px);
   justify-content: center;
   padding: 1em;
 `;
 
-const Maincontainer = styled.div`
+const MainContainer = styled.div`
   display: grid;
   grid-template-columns: 1fr 3fr;
   grid-gap: 2rem;
@@ -20,11 +20,11 @@ const Maincontainer = styled.div`
 
 const Main = ({children}) => {
     return (
-      <Mainsection>
-        <Maincontainer>
+      <MainSection>
+        <MainContainer>
           {children}
-        </Maincontainer>
-      </Mainsection>
+        </MainContainer>
+      </MainSection>
     );
 }
 

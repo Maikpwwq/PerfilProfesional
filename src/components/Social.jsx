@@ -1,8 +1,13 @@
 import React from "react";
 
-import styled, { ThemeProvider, css } from 'styled-components';
+import styled, { ThemeProvider} from 'styled-components';
 
-const SocialStyle = styled.div`
+const SocialSection = styled.div`
+  margin: 0 auto;
+  display: block;
+`;
+
+const SocialContainer = styled.div`
   margin: 0 auto;
   display: block;
 `;
@@ -33,12 +38,15 @@ const facebook = {
 };
 const twitter = {
   color: "#38A1F3"
-}
+};
 const linkedin = {
   color: "#0e76a8"
-}
+};
 const github = {
   color: "#333"
+};
+const instagram = {
+  color: "#e1306c"
 }
 
 const getColor = (name) => {
@@ -46,27 +54,28 @@ const getColor = (name) => {
   if (name === 'twitter') return twitter;
   if (name === 'linkedin') return linkedin;
   if (name === 'github') return github;
+  if (name === 'instagram') return instagram;
 }
 
 const Social = props => {
     return (
-      <Socialsection>
-        <Socialcontainer>
+      <SocialSection>
+        <SocialContainer>
           {props.social &&
             <SocialUl>
               {props.social.map((item, index) =>
                 <SocialLi key={`social-${index}`}>
                   <SocialAnchor href={item.url} target='_blank'>
                     <ThemeProvider theme={getColor(item.name)}>
-                      <SocialIcon className="fa fa-${item.name}"></SocialIcon>
+                      <SocialIcon className={`fa fa-${item.name}`}></SocialIcon>
                     </ThemeProvider>
                   </SocialAnchor>
                 </SocialLi>
               )}
             </SocialUl>
           }          
-        </Socialcontainer>        
-      </Socialsection>
+        </SocialContainer>        
+      </SocialSection>
     );
 }
 

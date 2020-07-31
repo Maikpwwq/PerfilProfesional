@@ -2,8 +2,8 @@ import React from "react";
 
 const Sidebar = ({children}) => {
     return (
-      <div className="Sidebar">
-        <div className="Sidebarcontainer">
+      <div className="SidebarSection">
+        <div className="SidebarContainer">
             {children}
         </div>            
       </div>

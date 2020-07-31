@@ -2,9 +2,9 @@ import React from "react";
 import styled, { keyframes } from 'styled-components';
 import H2Element from '../styled/H2Element';
 
-const Skillscontainer = styled.div`
+const SkillsContainer = styled.div`
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(2, 1fr);
   grid-gap: 2rem;
   grid-row-gap: 0.5em;
   @media only screen and (max-width : 767px) {
@@ -54,9 +54,9 @@ const SkillsSpan = styled.span`
 
 const Skills = props => {
     return (
-      <div className="Skills">
-        <Skillscontainer>
-          <h2 name="Skills"></h2>
+      <div className="SkillSection">
+        <SkillsContainer>
+          <H2Element name="Skills"></H2Element> <br/>
           {props.data.map((skill, index) => (
             <div className='Skills-item' key={`Skills-${index}`}>
               <SkillsH5>{skill.name}</SkillsH5>
@@ -65,7 +65,7 @@ const Skills = props => {
               </SkillsLine>
             </div>
           ))}
-        </Skillscontainer>
+        </SkillsContainer>
       </div>
     );
 }

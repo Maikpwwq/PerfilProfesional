@@ -1,34 +1,30 @@
 # PerfilProfesional
-A mis relaciones publicas presento un Curriculum Vitae 
-
-![Commits](./img/CommitsIniciales.png) 
-Cambios Iniciales.
-![Revert](./img/CommitRevert.png) 
-Revert Cambios.
-![Reset](./img/CommitReset.png) 
-Reset Cambios.
-
+Curriculum Vitae de relacionamiento publico
 - Este proyecto comprende mi portafolio y recopila mis experiencias previas.
+
+## Autor
+_Michael Arias_ 
+- *Director de transformacion digital*
+![FOTOPERFIL](./public/FotoCV.jpg) 
 
 __Intereses:__
 
-1) Ingeniero Mecanico
-2) Project Manager
-3) Social media Marketing
-4) Public relations Strategy
-5) Diseño y desarrollo Web
+1 Ingeniero Mecanico
+2 Project Manager
+3 Social media Marketing
+4 Public relations Strategy
+5 Diseño y desarrollo Web
 
-#### Redes Sociales
+## Redes Sociales
 
-**Facebook**: https://www.facebook.com/YoguiMind/
+**Facebook**: 
+> https://www.facebook.com/YoguiMind/
 
-**LinkedIn**: https://www.linkedin.com/in/maik-col/
+**LinkedIn**: 
+> https://www.linkedin.com/in/maik-col/
 
-**Instagram**: https://www.instagram.com/mike.yogui.mind/
-
-## Autor
-
-* **Michael Arias** - *Director de transformacion digital* -
+**Instagram**: 
+> https://www.instagram.com/mike.yogui.mind/
 
 ## Licencia
 Este proyecto está licenciado bajo la Licencia MIT 

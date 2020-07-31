@@ -2,8 +2,8 @@ import React from "react";
 
 const Info = ({children}) => {
     return (
-        <div className="Info">
-            <div className="Infocontainer">
+        <div className="InfoSection">
+            <div className="InfoContainer">
                 {children}
             </div>
         </div>

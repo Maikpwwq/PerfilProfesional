@@ -5,16 +5,16 @@ import ParamElement from '../styled/ParamElement';
 
 const Experience = props => {
     return (
-      <div className="Experience">
-        <div className="Experiencecontainer">
+      <div className="ExperienceSection">
+        <div className="ExperienceContainer">
             <H2Element name="Experience" />
             {props.data.map((exp, index) => (
-                <div className='Experience-item' key={`Experience-${index}`}>
-                    <H3Element>{exp.degree} @ {exp.institution} 
-                    <span>{exp.startDate} - {exp.endDate}</span></H3Element>
-                    <ParamElement content={exp.description} />
-                </div>
-            ))}
+              <div className='item' key={`Experience-${index}`}>
+                <H3Element>{exp.jobTitle} @ {exp.company} -
+                <span> From {exp.startDate} to {exp.endDate}</span></H3Element>
+                <ParamElement content={exp.jobDescription} />
+              </div>
+            ))}        
         </div>
       </div>
     );

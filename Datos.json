@@ -1,0 +1,41 @@
+{
+    "name":"Ing. Michael Arias",
+    "profession":"Web Developer, Manager Digital Transformation",
+    "address":"Bogota, Colombia.",
+    "avatar":"https://drive.google.com/file/d/1DCPjd1qbXuZl50IzQevgsLOgcbccRB1h/preview",
+    "bio":"Lead projects manager in engineering, I plan Web design (UX-UI), 3D CAD engineering design, process control engineering, and material structures specification. Experience in: Continuous improvement, Product design, Content marketing strategy, digital transformation. As a leader, I care about the development of each member, and I have a good aptitude for self-training. I am willing to commit my discernment and imagination for bringing the best results.",    
+    "education":[
+        {"degree":"Project Management Specialist","description":"Modern tools and techniques in project formulation and evaluation",
+        "endDate":"Present","university":"Distrital Francisco José de Caldas","startDate":"Aug. 2017"},
+        {"degree":"Mechanical Engineering", "description":"Mechanical Engineer, recognized for the best grade in the Saber Pro test of the 2017-1 promotion.",
+        "endDate":"Mar. 2017","university":"Distrital Francisco José de Caldas","startDate":"Jan. 2010"}
+    ],
+    "experience":[
+        {"company":"Listtech SAS.","endDate":"Present",
+            "jobDescription":"Specification of physical security and intelligent protection systems, readers, access panels, video surveillance, home automation, electronic locks and doors. We carry out preventive and corrective maintenance to emergency exits phase 1-2 El Dorado airport.",
+            "jobTitle":"Smart security integrator","startDate":"Jul. 2019"},
+        {"company":"Comunidad dezzpo Inc.","endDate":"Present",
+            "jobDescription":"Programming schedules of activities and resources, development of databases, digital marketing campaigns, prototype website, generation and conversion of new market niches.",
+            "jobTitle":"Ceo / Web developer","startDate":"Aug. 2018"},
+        {"company":"Continental SA.","endDate":"May. 2017",
+            "jobDescription":"Design prototypes and technical manufacturing tools. We managed to deliver two new products (electric-gas oven, extractor hood). Debugging and updating of databases of parts and drawings of all product lines, along with the modification of the manufacturing and assembly instructions.",
+            "jobTitle":"Mechanical Design Chief","startDate":"Jan. 2016"}            
+        ],
+    "certificate":[
+        {"date":"Aug. 2020","description":"FrontEnd Developer (UX-UI)",
+        "institution":"Bictia","name":"Programming Fundamentals"}        
+    ],    
+    "skills":[
+        {"name":"HTML5","percentage":"90%"},
+        {"name":"CSS","percentage":"70%"},
+        {"name":"JavaScript","percentage":"65%"},
+        {"name":"React","percentage":"50%"}
+    ],
+    "social":[
+        {"name":"facebook", "url":"https://facebook.com/YoguiMind/"},
+        {"name":"twitter", "url":"https://twitter.com/"},
+        {"name":"github", "url":"https://github.com/Maikpwwq/"},
+        {"name":"linkedin", "url":"https://www.linkedin.com/in/maik-col/"},
+        {"name":"instagram", "url":"https://www.instagram.com/mike.yogui.mind/"}
+    ]
+}

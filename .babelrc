@@ -5,18 +5,18 @@
       {
         "loose": true,
         "modules": false,
-        "useBuiltIns": "usage",
         "shippedProposals": true,
         "targets": {
           "browsers": [ ">0.25%", "not dead" ]
-        }
+        },
+        "useBuiltIns": "usage",
+        "corejs": "3.1"
       }
     ],
     [
 
       "@babel/preset-react",
-      {
-        "useBuiltIns": true,
+      {        
         "pragma": "React.createElement"
       }
     ]
